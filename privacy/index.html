@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <!--
   Daylist — Privacy Policy
-  Host this single file with GitHub Pages (works without a custom domain:
-  https://<username>.github.io/<repo>/privacy-policy.html) and put that URL
-  in the Play Console listing. Update the "Last updated" date if you change
-  the policy after publishing.
+  Deployed at https://vectorwiseco.github.io/Daylist/privacy/
+  Update the "Last updated" date if you change the policy after publishing.
 -->
 <html lang="en">
 <head>
@@ -65,7 +63,7 @@
 <main>
   <header>
     <h1>Privacy Policy — Daylist</h1>
-    <p class="updated">Last updated: 9 September 2026</p>
+    <p class="updated">Last updated: 10 September 2026</p>
   </header>
 
   <p>
@@ -97,11 +95,13 @@
   <p>
     The app shows <strong>one kind of ad</strong>: an optional &ldquo;rewarded&rdquo; ad that you can
     choose to watch to unlock a widget theme. There are no banner ads and no full-screen ads that
-    interrupt you. If you never tap &ldquo;watch an ad&rdquo;, no ad is ever requested.
+    interrupt you. Until the first time you tap &ldquo;watch an ad&rdquo;, the Google Mobile Ads SDK
+    is <strong>not started</strong>, no ad is requested, and no advertising identifier is accessed.
   </p>
   <p>
-    When you do choose to watch one, the ad is served by <strong>Google AdMob</strong>. To do this,
-    Google&rsquo;s Mobile Ads SDK may collect and process:
+    The first time you choose to watch one, the app starts Google&rsquo;s Mobile Ads SDK and (where
+    required in your region) shows a consent form. From that point on, while the app is installed,
+    the SDK may collect and process:
   </p>
   <ul>
     <li>a device advertising identifier (Advertising ID);</li>
@@ -154,7 +154,7 @@
 
   <h2>6. Your choices</h2>
   <ul>
-    <li>Don&rsquo;t watch rewarded ads &rarr; no ad data is collected.</li>
+    <li>Never tap &ldquo;watch an ad&rdquo; &rarr; the ads SDK never starts and no ad data is collected.</li>
     <li>Reset or limit your Advertising ID in device settings.</li>
     <li>Export or delete your data at any time from within the app.</li>
     <li>Uninstall the app to erase everything it stored.</li>
