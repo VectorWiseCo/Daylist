@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!--
+  Daylist — Landing page
+  Deployed at https://vectorwiseco.github.io/Daylist/
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="robots" content="index, follow">
+<meta name="description" content="Daylist is a quiet, ambient daily planner for Android. Plan in plain words, get reminded, stay on track.">
+<title>Daylist — Planner &amp; Reminders</title>
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #ffffff;
+    --surface: #f7f7f8;
+    --ink: #1c1b22;
+    --ink-muted: #56545f;
+    --rule: #e5e5ea;
+    --accent: #4f46e5;
+    --accent-soft: #eef0ff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+  .mark {
+    width: 72px;
+    height: 72px;
+    border-radius: 20px;
+    background: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+  .mark svg { width: 34px; height: 34px; }
+  h1 {
+    font-size: 2.1rem;
+    line-height: 1.2;
+    margin: 0 0 10px;
+    letter-spacing: -0.02em;
+  }
+  .tagline {
+    font-size: 1.1rem;
+    color: var(--ink-muted);
+    margin: 0 0 32px;
+  }
+  .cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px 22px;
+    border-radius: 999px;
+    font-size: 0.98rem;
+  }
+  .cta:hover { opacity: 0.92; }
+  section { margin-top: 56px; }
+  h2 {
+    font-size: 1.1rem;
+    margin: 0 0 16px;
+    letter-spacing: -0.01em;
+  }
+  .features {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 14px;
+  }
+  .features li {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    padding: 16px 18px;
+    color: var(--ink);
+  }
+  .features strong { display: block; margin-bottom: 4px; }
+  .features span { color: var(--ink-muted); font-size: 0.95rem; }
+  footer {
+    margin-top: 64px;
+    padding-top: 20px;
+    border-top: 1px solid var(--rule);
+    color: var(--ink-muted);
+    font-size: 0.9rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+  }
+  footer a { color: var(--ink-muted); }
+  footer a:hover { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <div class="mark" aria-hidden="true">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M5 4h11a2 2 0 0 1 2 2v14l-3-2-3 2-3-2-3 2-3-2V6a2 2 0 0 1 2-2Z" stroke="#ffffff" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="M8 9h7M8 12.5h7M8 16h4" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+  <h1>Daylist</h1>
+  <p class="tagline">A quiet, ambient daily planner. Write your day the way you&rsquo;d say it out loud, Daylist works out the time and the repeat.</p>
+
+  <a class="cta" href="https://play.google.com/store/apps/details?id=com.vectowise.daylist">Get it on Google Play</a>
+
+  <section>
+    <h2>What it does</h2>
+    <ul class="features">
+      <li>
+        <strong>Plan in plain words</strong>
+        <span>&ldquo;Gym at 7am every day&rdquo;, &ldquo;call mum friday&rdquo;. Daylist reads it the way you&rsquo;d say it.</span>
+      </li>
+      <li>
+        <strong>Reminders that mean it</strong>
+        <span>A quiet nudge, or a real alarm, your choice, task by task.</span>
+      </li>
+      <li>
+        <strong>Everything stays on your device</strong>
+        <span>No account, no server, no analytics. Your plan is yours.</span>
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    <a href="privacy/">Privacy Policy</a>
+    <a href="terms/">Terms of Use</a>
+    <a href="mailto:vectorwiseco@gmail.com">vectorwiseco@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>
